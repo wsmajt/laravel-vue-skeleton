@@ -19,7 +19,7 @@ A skeleton project combining Laravel and Vue.js to kickstart your web applicatio
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/laravel-vue-skeleton.git
+git clone https://github.com/wsmajt/laravel-vue-skeleton.git
 cd laravel-vue-skeleton
 ```
 

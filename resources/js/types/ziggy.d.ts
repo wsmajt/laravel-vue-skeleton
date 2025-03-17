@@ -6,6 +6,5 @@ type AppRouter = {
 };
 
 declare global {
-    // eslint-disable-next-line no-var
-    var route: AppRouter;
+    let route: AppRouter;
 }

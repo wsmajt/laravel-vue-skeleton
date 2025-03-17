@@ -38,7 +38,7 @@ createServer((page) =>
 
             // Make route function available globally for SSR...
             if (typeof window === 'undefined') {
-                global.route = appRoute;
+                (global as any).route = appRoute;
             }
 
             app.use(plugin);

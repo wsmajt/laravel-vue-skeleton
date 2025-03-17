@@ -35,7 +35,20 @@ composer install
 npm install
 ```
 
-4. Run application:
+4.  .env file:
+
+```
+change name of CHANGE_ME_TO_.env to .env
+in .env file, generate base64:Encryption Key
+```
+
+5.  Migrate Database:
+
+```bash
+php artisan migrate
+```
+
+6. Run application:
 
 ```bash
 composer run dev

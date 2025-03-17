@@ -2,12 +2,9 @@ import vue from '@vitejs/plugin-vue';
 import autoprefixer from 'autoprefixer';
 import laravel from 'laravel-vite-plugin';
 import path from 'path';
-/* eslint-disable */
-// @ts-expect-error
-import tailwindcss from '@tailwindcss/vite';
-/* eslint-enable */
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
     plugins: [

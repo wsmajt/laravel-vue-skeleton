@@ -3,7 +3,7 @@ import createServer from '@inertiajs/vue3/server';
 import { renderToString } from '@vue/server-renderer';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createSSRApp, DefineComponent, h } from 'vue';
-import { route, Router } from 'ziggy-js';
+import { route, RouteParams, Router } from 'ziggy-js';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -24,8 +24,8 @@ createServer((page) =>
 
             // bind config to ziggyRoute function
             function appRoute(): Router;
-            function appRoute(name: string, params?: any, absolute?: boolean): string;
-            function appRoute(name?: string, params?: any, absolute?: boolean): Router | string {
+            function appRoute(name: string, params?: RouteParams<typeof name>, absolute?: boolean): string;
+            function appRoute(name?: string, params?: RouteParams<string>, absolute?: boolean): Router | string {
                 if (name === undefined) {
                     return route();
                 }

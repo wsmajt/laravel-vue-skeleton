@@ -39,7 +39,9 @@ npm install
 
 ```
 change name of CHANGE_ME_TO_.env to .env
-in .env file, generate base64:Encryption Key
+```
+```bash
+php artisan key:generate
 ```
 
 5.  Migrate Database:
